@@ -20,7 +20,12 @@
              werden. -->
         <SignificantProperty>
             <PropertyName>Readability</PropertyName>
-            <PropertyExplanation>The object should be human readable</PropertyExplanation>
+            <PropertyExplanation>The object should be human readable. 
+                The most important goal of digitizing historical print materials is to provide users with these documents regardless of time and place
+                and thus of course to preserve the originals. The optical readability of the digitized documents is therefore
+                an important property. To ensure this property, the resolution must be at least 300 DPI and a high contrast must be maintained
+                become.
+            </PropertyExplanation>
             <PropertyCategory>Content</PropertyCategory>
             <PropertyProcedure>designated communities</PropertyProcedure>
         </SignificantProperty>
@@ -32,10 +37,15 @@
              Medienart und ggf. Serieninformationen ermöglicht. Persistente Identifikatoren sind ebenfalls zu erhalten (PPN, URN, DOI).
              -->
         <SignificantProperty>
-            <PropertyName>readability</PropertyName>
-            <PropertyExplanation>The object should be human readable</PropertyExplanation>
-            <PropertyCategory>Structure</PropertyCategory>
-            <PropertyProcedure>provenance</PropertyProcedure>
+            <PropertyName>Bibliographic classification</PropertyName>
+            <PropertyExplanation>The object should be findable bibliographically.
+                To find the documents under different bibliographic aspects, the bibliographic metadata must be preserved.
+                Dynamic data such as LinkedData are excluded from this. It must be ensured that, if necessary, one can find a document from the archive data alone,
+                even if rudimentary, can build up a catalog that can provide a basic research on these documents by author, year of publication, title, publisher,
+                media type and, if necessary, serial information. Persistent identifiers can also be obtained (PPN, URN, DOI)
+            </PropertyExplanation>
+            <PropertyCategory>Context</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
         </SignificantProperty>
         <!-- Maschinelle Verarbeitbarkeit
 
@@ -46,6 +56,19 @@
              Die Farb- bzw. Graustufeninformation muss ebenfalls erhalten bleiben, um die Fehlerrate niedriger zu halten. Um eine semantische Suche zu
              ermöglichen, ist die logische Struktur des digitalen Dokumentes erhalten.
              -->
+        <SignificantProperty>
+            <PropertyName>Automatic Processing</PropertyName>
+            <PropertyExplanation>The object should be OCR-capable.
+                Another important usage scenario is the machine processability of the digitized documents. An automatic OCR processing
+                allows, for example, to efficiently find documents based on their content and display the relevant text part
+                (using word coordinates). But also statistical evaluations by scientists e.g. linguistic analyses are possible.
+                For machine processability, the resolution must be at least 300 DPI, and for Frakturschrift, 400 DPI may even be necessary.
+                The color or grayscale information must also be retained to keep the error rate low. To perform a semantic search
+                the logical structure of the digital document is preserved.
+            </PropertyExplanation>
+            <PropertyCategory>Behaviour</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
         <!-- Reproduktion
 
              Ein weiteres Szenario ist die Erstellung einer möglichst originalgetreuen Kopie insbesondere zum Zweck der Bestandserhaltung, aber auch für
@@ -54,5 +77,26 @@
              die Objektivdaten erhalten werden. Die physische Struktur, d. h. die Zurdnung einer Scandatei zu einer Seite des Originals, muss ebenfalls
              erhalten bleiben, damit die korrekte Anordnung der Seiten in der Reproduktion sichergestellt werden kann.
              -->
+        <SignificantProperty>
+            <PropertyName>Reproducibility</PropertyName>
+            <PropertyExplanation>The object should be reproducible.
+                A further scenario is the production of a copy as true to the original as possible, especially for the purpose of conservation, but also
+                publications. It is necessary to keep the original size, colors and details. The resolution should be
+                at least 600dpi, the color space must be stored as a profile and the scan resolution, number of pixels and, if necessary, for photographed digital images
+                the lens data are obtained. The physical structure, i.e. the assignment of a scan file to one side of the original, must also be
+                are preserved, so that the correct arrangement of the pages in the reproduction can be ensured.
+            </PropertyExplanation>
+            <PropertyCategory>Rendering</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <!-- Authentizität -->
+        <SignificantProperty>
+            <PropertyName>Authenticity</PropertyName>
+            <PropertyExplanation>The object should have authentic origin.
+                In order to ensure the verification of authenticity, indications of origin, but also color fidelity and structural features must be obtained for a source criticism.
+            </PropertyExplanation>
+            <PropertyCategory>Context</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
     </SignificantProperties>
 </Object>
