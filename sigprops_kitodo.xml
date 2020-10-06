@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Object xmlns="http://slubarchiv.slub-dresden.de/sigprops1"
+    xsi:schemaLocation="http://slubarchiv.slub-dresden.de/sigprops1 https://slubarchiv.slub-dresden.de/slubarchiv/standards/sigprops/sigprops.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Metadata>
+        <CreationDate>2020-10-06T10:06:00</CreationDate>
+        <Creator>Andreas Romeyke</Creator>
+        <CreationSoftwareName>oxygen</CreationSoftwareName>
+        <WorkflowName>Kitodo</WorkflowName>
+        <InstitutionName>SLUB Dresden</InstitutionName>
+        <InstitutionContact>langzeitarchiv@slub-dresden.de</InstitutionContact>
+        <ObjectType>Retrodigitalisat (Flachware)</ObjectType>
+    </Metadata>
+    <SignificantProperties>
+        <!-- Lesen und Anschauen
+
+             Das wichtigste Ziel der Digitalisierung historischer Printmaterialien ist es, den Nutzern diese Dokumente unabhängig von Ort und Zeit
+             zugänglich zu machen und damit natürlich auch die Originale zu schonen. Die optische Lesbarkeit der digitalisierten Dokumente ist somit
+             eine wichtige Eigenschaft. Um diese Eigenschaft zu sichern, muss die Auflösung mindestens 300 DPI betragen und ein hoher Kontrast erhalten
+             werden. -->
+        <SignificantProperty>
+            <PropertyName>Readability</PropertyName>
+            <PropertyExplanation>The object should be human readable</PropertyExplanation>
+            <PropertyCategory>Content</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <!-- Bibliographische Einordnung
+
+             Um die Dokumente unter verschiedenen bibliographischen Aspekten zu finden, müssen die bibliographischen Metadaten erhalten werden.
+             Dynamische Daten wie LinkedData sind davon ausgenommen. Es muss sichergestellt sein, dass man allein aus den Archivdaten notfalls einen,
+             wenn auch rudimentären, Katalog aufbauen kann, der eine Basisrecherche über diese Dokumente nach Autor, Erscheinungsjahr, Titel, Verlag,
+             Medienart und ggf. Serieninformationen ermöglicht. Persistente Identifikatoren sind ebenfalls zu erhalten (PPN, URN, DOI).
+             -->
+        <SignificantProperty>
+            <PropertyName>readability</PropertyName>
+            <PropertyExplanation>The object should be human readable</PropertyExplanation>
+            <PropertyCategory>Structure</PropertyCategory>
+            <PropertyProcedure>provenance</PropertyProcedure>
+        </SignificantProperty>
+        <!-- Maschinelle Verarbeitbarkeit
+
+             Ein weiteres wichtiges Nutzungsszenario ist die maschinelle Verarbeitbarkeit der digitalisierten Dokumente. Eine automatische OCR-Aufbereitung
+             erlaubt beispielsweise das effiziente Auffinden von Dokumenten basierend auf deren Inhalt und die Anzeige des relevanten Textteils
+             (unter Verwendung von Wortkoordinaten). Aber auch statistische Auswertungen durch Wissenschaftler z.B. linguistische Analysen sind so möglich.
+             Für die maschinelle Verarbeitbarkeit muss die Auflösung mindestens 300 DPI betragen, bei Frakturschrift sind eventuell sogar 400 DPI nötig.
+             Die Farb- bzw. Graustufeninformation muss ebenfalls erhalten bleiben, um die Fehlerrate niedriger zu halten. Um eine semantische Suche zu
+             ermöglichen, ist die logische Struktur des digitalen Dokumentes erhalten.
+             -->
+        <!-- Reproduktion
+
+             Ein weiteres Szenario ist die Erstellung einer möglichst originalgetreuen Kopie insbesondere zum Zweck der Bestandserhaltung, aber auch für
+             Veröffentlichungen. Dafür ist es notwendig, die Originalgröße, die Farben und die Details zu erhalten. Die Auflösung sollte dementsprechend
+             mindestens 600dpi betragen, der Farbraum als Profil hinterlegt sein und die Scanauflösung, Pixelzahl und ggf. bei fotografierten Digitalisaten
+             die Objektivdaten erhalten werden. Die physische Struktur, d. h. die Zurdnung einer Scandatei zu einer Seite des Originals, muss ebenfalls
+             erhalten bleiben, damit die korrekte Anordnung der Seiten in der Reproduktion sichergestellt werden kann.
+             -->
+    </SignificantProperties>
+</Object>
