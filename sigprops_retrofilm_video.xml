@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Object xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://slubarchiv.slub-dresden.de/sigprops1 ../../Downloads/sigprops.xsd"
+ xmlns="http://slubarchiv.slub-dresden.de/sigprops1"><Metadata><CreationDate>2021-02-17T13:15:04</CreationDate><Creator>Andreas Romeyke</Creator><WorkflowName>Mediathek / SAVE</WorkflowName><InstitutionName>SLUB Dresden</InstitutionName><InstitutionContact>andreas.romeyke@slub-dresden.de</InstitutionContact><ObjectType>Retrodigitalisat (Film 8mm-35mm)</ObjectType></Metadata>
+    <SignificantProperties>
+        <SignificantProperty>
+            <PropertyName>viewable</PropertyName>
+            <PropertyExplanation>The object should be able to be viewed by people</PropertyExplanation>
+            <PropertyCategory>Content</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>authentic</PropertyName>
+            <PropertyExplanation>
+                The object feels as you would expect in the historical context.  
+            </PropertyExplanation>
+            <PropertyCategory>Behaviour</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>audible</PropertyName>
+            <PropertyExplanation>The object should be able to be audible by people</PropertyExplanation>
+            <PropertyCategory>Content</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>detailed</PropertyName>
+            <PropertyExplanation>The object is as detailed as the original.</PropertyExplanation>
+            <PropertyCategory>Rendering</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>color accurate</PropertyName>
+            <PropertyExplanation>The object is as true to color as the original.</PropertyExplanation>
+            <PropertyCategory>Rendering</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>audio accurate</PropertyName>
+            <PropertyExplanation>The object is as qualitatively equivalent in sound as the original.</PropertyExplanation>
+            <PropertyCategory>Rendering</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>synchron</PropertyName>
+            <PropertyExplanation>The object is synchronous in image and sound.</PropertyExplanation>
+            <PropertyCategory>Behaviour</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>artifact free</PropertyName>
+            <PropertyExplanation>The object is free from compression artifacts.</PropertyExplanation>
+            <PropertyCategory>Rendering</PropertyCategory>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>playable</PropertyName>
+            <PropertyExplanation>The object should be playable.</PropertyExplanation>
+            <PropertyCategory>Behaviour</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty><PropertyName>searchable</PropertyName>
+            <PropertyExplanation>The object should be searchable for timepoints</PropertyExplanation>
+            <PropertyCategory>Structure</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>skipable</PropertyName>
+            <PropertyExplanation>The object should be skipable to time codes and chapters</PropertyExplanation>
+            <PropertyCategory>Structure</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>cuttable</PropertyName>
+            <PropertyExplanation>The object should be reassemblable via crop marks.</PropertyExplanation>
+            <PropertyCategory>Structure</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>integer</PropertyName>
+            <PropertyExplanation>The object should show damage.</PropertyExplanation>
+            <PropertyCategory>Structure</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>authentic</PropertyName>
+            <PropertyExplanation>The object should should be suitable to prove its authenticity.</PropertyExplanation>
+            <PropertyCategory>Context</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>identifiable</PropertyName>
+            <PropertyExplanation>The object should should be identifiable by metadata.</PropertyExplanation>
+            <PropertyCategory>Context</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>quoteable</PropertyName>
+            <PropertyExplanation>The object should should be quoteable.</PropertyExplanation>
+            <PropertyCategory>Structure</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+    </SignificantProperties>
+</Object>
+
