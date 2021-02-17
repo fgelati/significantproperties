@@ -5,21 +5,19 @@
     <SignificantProperties>
         <SignificantProperty>
             <PropertyName>viewable</PropertyName>
-            <PropertyExplanation>The object should be able to be viewed by people</PropertyExplanation>
+            <PropertyExplanation>The object should be able to be played and viewed by people</PropertyExplanation>
             <PropertyCategory>Content</PropertyCategory>
             <PropertyProcedure>designated communities</PropertyProcedure>
         </SignificantProperty>
         <SignificantProperty>
             <PropertyName>authentic</PropertyName>
-            <PropertyExplanation>
-                The object feels as you would expect in the historical context.  
-            </PropertyExplanation>
+            <PropertyExplanation>The object feels as you would expect in the historical context.</PropertyExplanation>
             <PropertyCategory>Behaviour</PropertyCategory>
             <PropertyProcedure>designated communities</PropertyProcedure>
         </SignificantProperty>
         <SignificantProperty>
             <PropertyName>audible</PropertyName>
-            <PropertyExplanation>The object should be able to be audible by people</PropertyExplanation>
+            <PropertyExplanation>The object should be able to be audible by people.</PropertyExplanation>
             <PropertyCategory>Content</PropertyCategory>
             <PropertyProcedure>designated communities</PropertyProcedure>
         </SignificantProperty>
@@ -52,14 +50,8 @@
             <PropertyExplanation>The object is free from compression artifacts.</PropertyExplanation>
             <PropertyCategory>Rendering</PropertyCategory>
         </SignificantProperty>
-        <SignificantProperty>
-            <PropertyName>playable</PropertyName>
-            <PropertyExplanation>The object should be playable.</PropertyExplanation>
-            <PropertyCategory>Behaviour</PropertyCategory>
-            <PropertyProcedure>designated communities</PropertyProcedure>
-        </SignificantProperty>
         <SignificantProperty><PropertyName>searchable</PropertyName>
-            <PropertyExplanation>The object should be searchable for timepoints</PropertyExplanation>
+            <PropertyExplanation>The object should be searchable for timepoints.</PropertyExplanation>
             <PropertyCategory>Structure</PropertyCategory>
             <PropertyProcedure>designated communities</PropertyProcedure>
         </SignificantProperty>
@@ -83,19 +75,19 @@
         </SignificantProperty>
         <SignificantProperty>
             <PropertyName>authentic</PropertyName>
-            <PropertyExplanation>The object should should be suitable to prove its authenticity.</PropertyExplanation>
+            <PropertyExplanation>The object should be suitable to prove its authenticity.</PropertyExplanation>
             <PropertyCategory>Context</PropertyCategory>
             <PropertyProcedure>designated communities</PropertyProcedure>
         </SignificantProperty>
         <SignificantProperty>
             <PropertyName>identifiable</PropertyName>
-            <PropertyExplanation>The object should should be identifiable by metadata.</PropertyExplanation>
+            <PropertyExplanation>The object should be identifiable by metadata.</PropertyExplanation>
             <PropertyCategory>Context</PropertyCategory>
             <PropertyProcedure>designated communities</PropertyProcedure>
         </SignificantProperty>
         <SignificantProperty>
             <PropertyName>quoteable</PropertyName>
-            <PropertyExplanation>The object should should be quoteable.</PropertyExplanation>
+            <PropertyExplanation>The object should be quoteable.</PropertyExplanation>
             <PropertyCategory>Structure</PropertyCategory>
             <PropertyProcedure>designated communities</PropertyProcedure>
         </SignificantProperty>
