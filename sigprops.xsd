@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://slubarchiv.slub-dresden.de/sigprops1"
+    xmlns="http://slubarchiv.slub-dresden.de/sigprops1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified" version="1.0">
+    <xs:annotation>
+        <xs:documentation>XML files that are created based on this Schema describe exactly one
+            digital object type. If your collection contains more than one object types, please create more
+            XML files. The schema only describes the final result of determining significant
+            properties for an object type. Workflow specific data are not
+            captured. 
+        </xs:documentation>
+    </xs:annotation>
+
+    <xs:element name="Object">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="Metadata" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="CreationDate" type="xs:dateTime" minOccurs="1"
+                                maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation>Date, Time and Timezone of the moment when the
+                                        XML was created.</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="Creator" type="xs:string" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation>Person who created this
+                                        XML.</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="CreationSoftwareName" type="xs:string" minOccurs="0"
+                                maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation>Software that was used to create this
+                                        XML.</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="CreationSoftwareVersion" type="xs:string"
+                                minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation>Version of the software that was used to
+                                        create this XML.</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="WorkflowName" type="xs:string" minOccurs="1"
+                                maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation>Name of the Workflow that this Object is being
+                                        produced with.</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="InstitutionName" type="xs:string" minOccurs="1"
+                                maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation>Name of the Institution that created the
+                                        Object.</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="InstitutionContact" type="xs:string" minOccurs="1"
+                                maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation>Contact information of a person or group at
+                                        the Institution that created the Object.</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="ObjectType" type="xs:string" minOccurs="1"
+                                maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation>Type of the Object that is described in the
+                                        XML.</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="SignificantProperties" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="SignificantProperty" type="typeSignificantProperty"
+                                minOccurs="1" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation>Catalog of Significant Property
+                                        nodes.</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:all>
+            <xs:attribute name="ressourceType" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>Name of the ressource. A ressource is a specific part of an object. 
+                        This is useful when expressing that certain significant properties are particularly associated with specific parts of an object. In general it is not necessary to specify resource types.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="typeSignificantProperty">
+        <xs:sequence>
+            <xs:element name="PropertyName" type="xs:string" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Name of the significant property.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PropertyExplanation" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>More detailed explanation of why this property is
+                        significant.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute default="eng" name="lang" type="xs:language"
+                                use="optional"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="PropertyCategory" type="typeCategory" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>One of the five categories that significant properties can be
+                        assigned (Content, Context, Structure, Rendering,
+                        Behavior).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PropertyProcedure" type="typeProcedure" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Specifies the procedure that was used to find this significant
+                        property (provenance based, future use based).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="typeProcedure">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="provenance">
+                <xs:annotation>
+                    <xs:documentation> Specifies a procedure to determine the significant properties based on a provenance approach using the original intention of the creator of the object </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="designated communities">
+                <xs:annotation>
+                    <xs:documentation> Specifies a procedure to determine significant properties based on possible, future usage scenarios of a designated community.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="typeCategory">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Content">
+                <xs:annotation>
+                    <xs:documentation> Specifies a significant property that preserves
+                        the object's content. </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Context">
+                <xs:annotation>
+                    <xs:documentation> Specifies a significant property that preserves
+                        the object's Context. </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Structure">
+                <xs:annotation>
+                    <xs:documentation> Specifies a significant property that preserves
+                        the object's Structure. </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Rendering">
+                <xs:annotation>
+                    <xs:documentation> Specifies a significant property that preserves
+                        the object's Rendering. </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Behaviour">
+                <xs:annotation>
+                    <xs:documentation> Specifies a significant property that preserves
+                        the object's Behaviour. </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
