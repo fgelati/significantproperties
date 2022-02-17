@@ -11,12 +11,12 @@
         </xs:documentation>
     </xs:annotation>
 
-    <xs:element name="Object">
+    <xs:element name="ObjectType">
         <xs:complexType>
             <xs:all>
                 <xs:element name="Metadata" minOccurs="1" maxOccurs="1">
                     <xs:complexType>
-                        <xs:sequence>
+                        <xs:all>
                             <xs:element name="CreationDate" type="xs:dateTime" minOccurs="1"
                                 maxOccurs="1">
                                 <xs:annotation>
@@ -26,22 +26,8 @@
                             </xs:element>
                             <xs:element name="Creator" type="xs:string" minOccurs="1" maxOccurs="1">
                                 <xs:annotation>
-                                    <xs:documentation>Person who created this
+                                    <xs:documentation>Person / Role who created this
                                         XML.</xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="CreationSoftwareName" type="xs:string" minOccurs="0"
-                                maxOccurs="1">
-                                <xs:annotation>
-                                    <xs:documentation>Software that was used to create this
-                                        XML.</xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="CreationSoftwareVersion" type="xs:string"
-                                minOccurs="0" maxOccurs="1">
-                                <xs:annotation>
-                                    <xs:documentation>Version of the software that was used to
-                                        create this XML.</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
                             <xs:element name="WorkflowName" type="xs:string" minOccurs="1"
@@ -65,14 +51,14 @@
                                         the Institution that created the Object.</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="ObjectType" type="xs:string" minOccurs="1"
+                            <xs:element name="ObjectTypeName" type="xs:string" minOccurs="1"
                                 maxOccurs="1">
                                 <xs:annotation>
-                                    <xs:documentation>Type of the Object that is described in the
+                                    <xs:documentation>Name of the Objecttype that is described in the
                                         XML.</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                        </xs:sequence>
+                        </xs:all>
                     </xs:complexType>
                 </xs:element>
 
@@ -91,17 +77,31 @@
                 </xs:element>
 
             </xs:all>
-            <xs:attribute name="ressourceType" type="xs:string" use="optional">
+            <xs:attribute name="resourceType" type="xs:string" use="optional">
                 <xs:annotation>
-                    <xs:documentation>Name of the ressource. A ressource is a specific part of an object. 
-                        This is useful when expressing that certain significant properties are particularly associated with specific parts of an object. In general it is not necessary to specify resource types.</xs:documentation>
+                    <xs:documentation>Name of the resource. A resource is a specific subtype of an object. 
+                        This is useful when expressing that certain significant properties are particularly associated with specific parts of an object.
+                        
+                        An example:
+                        there is an object type "article". If we want to express that a certain component of this object type, let's say "mathematical formula",
+                        has special significant properties, e.g. "is machine readable", then it makes sense to bind these properties not generally to the 
+                        object type "article", but to the object type "article" with resource type "Mathematical formula".
+                        
+                        In general it is not necessary to specify resource types.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute default="en" name="language" type="xs:language" use="optional">
+                <xs:annotation>
+                    <xs:documentation>
+                        Specifies the encoding language for current Objecttype. The default is 'en' for english.
+                    </xs:documentation>
                 </xs:annotation>
             </xs:attribute>
         </xs:complexType>
     </xs:element>
 
     <xs:complexType name="typeSignificantProperty">
-        <xs:sequence>
+        <xs:all>
             <xs:element name="PropertyName" type="xs:string" minOccurs="1" maxOccurs="1">
                 <xs:annotation>
                     <xs:documentation>Name of the significant property.</xs:documentation>
@@ -114,10 +114,7 @@
                 </xs:annotation>
                 <xs:complexType>
                     <xs:simpleContent>
-                        <xs:extension base="xs:string">
-                            <xs:attribute default="eng" name="lang" type="xs:language"
-                                use="optional"/>
-                        </xs:extension>
+                        <xs:extension base="xs:string"> </xs:extension>
                     </xs:simpleContent>
                 </xs:complexType>
             </xs:element>
@@ -131,10 +128,10 @@
             <xs:element name="PropertyProcedure" type="typeProcedure" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                     <xs:documentation>Specifies the procedure that was used to find this significant
-                        property (provenance based, future use based).</xs:documentation>
+                        property.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-        </xs:sequence>
+        </xs:all>
     </xs:complexType>
     <xs:simpleType name="typeProcedure">
         <xs:restriction base="xs:string">
