@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Object xmlns="http://slubarchiv.slub-dresden.de/sigprops1"
+<ObjectType xmlns="http://slubarchiv.slub-dresden.de/sigprops1"
     xsi:schemaLocation="http://slubarchiv.slub-dresden.de/sigprops1 https://slubarchiv.slub-dresden.de/slubarchiv/standards/sigprops/sigprops.xsd"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Metadata>
         <CreationDate>2020-10-06T10:06:00</CreationDate>
         <Creator>Andreas Romeyke</Creator>
-        <CreationSoftwareName>oxygen</CreationSoftwareName>
         <WorkflowName>Kitodo</WorkflowName>
         <InstitutionName>SLUB Dresden</InstitutionName>
         <InstitutionContact>langzeitarchiv@slub-dresden.de</InstitutionContact>
-        <ObjectType>Retrodigitalisat (Flachware)</ObjectType>
+        <ObjectTypeName>Retrodigitalisat (Flachware)</ObjectTypeName>
     </Metadata>
     <SignificantProperties>
         <!-- Lesen und Anschauen
@@ -99,4 +98,4 @@
             <PropertyProcedure>designated communities</PropertyProcedure>
         </SignificantProperty>
     </SignificantProperties>
-</Object>
+</ObjectType>

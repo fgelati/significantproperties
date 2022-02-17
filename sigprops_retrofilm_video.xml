@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Object xmlns="http://slubarchiv.slub-dresden.de/sigprops1"
+<ObjectType xmlns="http://slubarchiv.slub-dresden.de/sigprops1"
     xsi:schemaLocation="http://slubarchiv.slub-dresden.de/sigprops1 https://slubarchiv.slub-dresden.de/slubarchiv/standards/sigprops/sigprops.xsd"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Metadata>
-    <CreationDate>2021-02-17T13:15:04</CreationDate>
-    <Creator>Andreas Romeyke</Creator><WorkflowName>Mediathek / SAVE</WorkflowName><InstitutionName>SLUB Dresden</InstitutionName><InstitutionContact>andreas.romeyke@slub-dresden.de</InstitutionContact><ObjectType>Retrodigitalisat (Film 8mm-35mm)</ObjectType></Metadata>
+        <CreationDate>2021-02-17T13:15:04</CreationDate>
+        <Creator>Andreas Romeyke</Creator>
+        <WorkflowName>Mediathek / SAVE</WorkflowName>
+        <InstitutionName>SLUB Dresden</InstitutionName>
+        <InstitutionContact>andreas.romeyke@slub-dresden.de</InstitutionContact>
+        <ObjectTypeName>Retrodigitalisat (Film 8mm-35mm)</ObjectTypeName>
+    </Metadata>
     <SignificantProperties>
         <SignificantProperty>
             <PropertyName>viewable</PropertyName>
@@ -53,7 +58,8 @@
             <PropertyExplanation>The object is free from compression artifacts.</PropertyExplanation>
             <PropertyCategory>Rendering</PropertyCategory>
         </SignificantProperty>
-        <SignificantProperty><PropertyName>searchable</PropertyName>
+        <SignificantProperty>
+            <PropertyName>searchable</PropertyName>
             <PropertyExplanation>The object should be searchable for timepoints.</PropertyExplanation>
             <PropertyCategory>Structure</PropertyCategory>
             <PropertyProcedure>designated communities</PropertyProcedure>
@@ -95,5 +101,4 @@
             <PropertyProcedure>designated communities</PropertyProcedure>
         </SignificantProperty>
     </SignificantProperties>
-</Object>
-
+</ObjectType>
