@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectType xmlns="http://slubarchiv.slub-dresden.de/sigprops1"
+    xsi:schemaLocation="http://slubarchiv.slub-dresden.de/sigprops1 https://slubarchiv.slub-dresden.de/slubarchiv/standards/sigprops/sigprops.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" language="de">
+    <Metadata>
+        <CreationDate>2022-02-16T09:30:00</CreationDate>
+        <Creator>Jens Steidl</Creator>
+        <WorkflowName>UBLLDPMuenzen</WorkflowName>
+        <InstitutionName>SLUB Dresden</InstitutionName>
+        <InstitutionContact>langzeitarchiv@slub-dresden.de</InstitutionContact>
+        <ObjectTypeName>Retrodigitalisierte Münzen</ObjectTypeName>
+    </Metadata>
+    <SignificantProperties>
+        <SignificantProperty>
+            <PropertyName>Helligkeit und Kontrast</PropertyName>
+            <PropertyExplanation>Das Objekt ist hell und kontrastreich (genug), um Details zu erkennen und zu unterscheiden.</PropertyExplanation>
+            <PropertyCategory>Rendering</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>Farbigkeit</PropertyName>
+            <PropertyExplanation>Das Objekt ist farbig.</PropertyExplanation>
+            <PropertyCategory>Rendering</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>Farbtreue</PropertyName>
+            <PropertyExplanation>Das Objekt ist farbtreu.</PropertyExplanation>
+            <PropertyCategory>Rendering</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>Schärfe</PropertyName>
+            <PropertyExplanation>Das Objekt ist scharf abgebildet.</PropertyExplanation>
+            <PropertyCategory>Rendering</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>Auflösung</PropertyName>
+            <PropertyExplanation>Das Objekt ist detailliert genug, um jedes Merkmal zu erkennen.</PropertyExplanation>
+            <PropertyCategory>Rendering</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>deskriptive Metadaten</PropertyName>
+            <PropertyExplanation>Das Objekt ist beschrieben mit deskriptiven Metadaten.</PropertyExplanation>
+            <PropertyCategory>Context</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>Prüfsummen</PropertyName>
+            <PropertyExplanation>Das Objekt ist integer.</PropertyExplanation>
+            <PropertyCategory>Context</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>Proportionen</PropertyName>
+            <PropertyExplanation>Das Objekt ist proportionsgetreu.</PropertyExplanation>
+            <PropertyCategory>Rendering</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>Größentreue</PropertyName>
+            <PropertyExplanation>Das Objekt ist größengetreu.</PropertyExplanation>
+            <PropertyCategory>Structure</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+        <SignificantProperty>
+            <PropertyName>Spektraltiefe</PropertyName>
+            <PropertyExplanation>Das Objekt ist spektralgetreu.</PropertyExplanation>
+            <PropertyCategory>Rendering</PropertyCategory>
+            <PropertyProcedure>designated communities</PropertyProcedure>
+        </SignificantProperty>
+    </SignificantProperties>
+</ObjectType>
